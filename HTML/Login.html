@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StepSphere - Login & Sign Up</title>
+    <link rel="stylesheet" href="/CSS/Login.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo">
+        <a href="/HTML/Home.html"
+          ><img src="/Image/StepSphereLogo.png" alt="StepSphere Logo"
+        /></a>
+      </div>
+
+      <div class="nav-links">
+        <a href="/HTML/Home.html">Home</a>
+        <a href="/HTML/Product.html">Product</a>
+        <a href="/HTML/Blog.html">Blog</a>
+        <a href="/HTML/Research.html">Research</a>
+        <a href="/HTML/About Us.html">About Us</a>
+      </div>
+
+      <div class="icons">
+        <i class="fas fa-search"></i>
+        <a href="/HTML/Login.html"><i class="fas fa-user-alt"></i></a>
+        <a href="/HTML/Product.html"><i class="fas fa-shopping-cart"></i></a>
+      </div>
+    </nav>
+
+    <!-- Main Auth Section -->
+    <div class="auth-container">
+      <!-- Left Panel - Sign Up -->
+      <div class="panel signup-panel">
+        <div class="panel-content">
+          <div class="panel-header">
+            <h2>New to StepSphere?</h2>
+            <p>Join our community and discover your perfect style</p>
+          </div>
+
+          <div class="panel-body">
+            <p class="panel-description">
+              Create an account to explore our latest collections, enjoy a
+              faster checkout experience, track your orders, and receive
+              exclusive offers.
+            </p>
+
+            <div class="benefits">
+              <div class="benefit-item">
+                <i class="fas fa-shipping-fast"></i>
+                <span>Faster Checkout</span>
+              </div>
+              <div class="benefit-item">
+                <i class="fas fa-box"></i>
+                <span>Track Orders</span>
+              </div>
+              <div class="benefit-item">
+                <i class="fas fa-gift"></i>
+                <span>Exclusive Offers</span>
+              </div>
+            </div>
+
+            <button class="btn btn-primary" onclick="toggleForms()">
+              CREATE AN ACCOUNT
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Panel - Login Form -->
+      <div class="panel login-panel">
+        <div class="form-container">
+          <div class="form-header">
+            <h2>Welcome Back</h2>
+            <p>Sign in to your account</p>
+          </div>
+
+          <form class="login-form" onsubmit="return validateLogin();">
+            <div class="form-group">
+              <label for="login-email">Email Address</label>
+              <input
+                type="email"
+                id="login-email"
+                placeholder="Enter your email"
+                required
+              />
+              <i class="fas fa-envelope"></i>
+            </div>
+
+            <div class="form-group">
+              <label for="login-password">Password</label>
+              <input
+                type="password"
+                id="login-password"
+                placeholder="Enter your password"
+                required
+              />
+              <i class="fas fa-lock"></i>
+            </div>
+
+            <div class="form-options">
+              <label class="remember-me">
+                <input type="checkbox" />
+                <span>Remember me</span>
+              </label>
+              <a href="#" class="forgot-password">Forgot Password?</a>
+            </div>
+
+            <button type="submit" class="btn btn-login">SIGN IN</button>
+          </form>
+
+          <div class="divider">
+            <span>or continue with</span>
+          </div>
+
+          <div class="social-login">
+            <button type="button" class="social-btn facebook">
+              <i class="fab fa-facebook-f"></i>
+            </button>
+            <button type="button" class="social-btn google">
+              <i class="fab fa-google"></i>
+            </button>
+            <button type="button" class="social-btn twitter">
+              <i class="fab fa-twitter"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Panel - Signup Form (Hidden) -->
+      <div
+        class="panel signup-form-panel"
+        id="signupPanel"
+        style="display: none"
+      >
+        <div class="form-container">
+          <div class="form-header">
+            <h2>Create Account</h2>
+            <p>Join StepSphere today</p>
+          </div>
+
+          <form class="signup-form" onsubmit="return validateSignup();">
+            <div class="form-group">
+              <label for="signup-name">Full Name</label>
+              <input
+                type="text"
+                id="signup-name"
+                placeholder="Enter your full name"
+                required
+              />
+              <i class="fas fa-user"></i>
+            </div>
+
+            <div class="form-group">
+              <label for="signup-email">Email Address</label>
+              <input
+                type="email"
+                id="signup-email"
+                placeholder="Enter your email"
+                required
+              />
+              <i class="fas fa-envelope"></i>
+            </div>
+
+            <div class="form-group">
+              <label for="signup-password">Password</label>
+              <input
+                type="password"
+                id="signup-password"
+                placeholder="Create a password"
+                required
+              />
+              <i class="fas fa-lock"></i>
+            </div>
+
+            <div class="form-group">
+              <label for="signup-confirm">Confirm Password</label>
+              <input
+                type="password"
+                id="signup-confirm"
+                placeholder="Confirm password"
+                required
+              />
+              <i class="fas fa-lock"></i>
+            </div>
+
+            <label class="terms-check">
+              <input type="checkbox" required />
+              <span>I agree to the Terms of Service and Privacy Policy</span>
+            </label>
+
+            <button type="submit" class="btn btn-login">CREATE ACCOUNT</button>
+          </form>
+
+          <p class="toggle-form">
+            Already have an account?
+            <a href="#" onclick="toggleForms()">Sign In</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <p>Itahari, Nepal</p>
+          <p>stepsphere2025@gmail.com</p>
+          <p>021-545978</p>
+        </div>
+        <div class="footer-section">
+          <h3>Follow Us</h3>
+          <ul class="social-links2">
+            <li>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <a href="/HTML/Home.html">Home</a>
+          <a href="/HTML/Product.html">Product</a>
+          <a href="/HTML/Blog.html">Blog</a>
+          <a href="/HTML/Research.html">Research</a>
+          <a href="/HTML/About Us.html">About Us</a>
+        </div>
+        <div class="footer-section">
+          <h3>Policies</h3>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Return Policy</a>
+          <a href="#">Student Discount</a>
+          <a href="#">FAQ</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; StepSphere 'Step Ahead, Stay Ahead'. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      function toggleForms() {
+        const loginPanel = document.querySelector(".login-panel");
+        const signupPanel = document.getElementById("signupPanel");
+
+        loginPanel.style.display =
+          loginPanel.style.display === "none" ? "flex" : "none";
+        signupPanel.style.display =
+          signupPanel.style.display === "none" ? "flex" : "none";
+      }
+
+      function validateLogin() {
+        const email = document.getElementById("login-email").value.trim();
+        const password = document.getElementById("login-password").value.trim();
+
+        if (!email || !password) {
+          alert("Please fill in all fields!");
+          return false;
+        }
+
+        if (!email.includes("@")) {
+          alert("Please enter a valid email address!");
+          return false;
+        }
+
+        alert("Logged in successfully! Welcome back.");
+        return true;
+      }
+
+      function validateSignup() {
+        const name = document.getElementById("signup-name").value.trim();
+        const email = document.getElementById("signup-email").value.trim();
+        const password = document
+          .getElementById("signup-password")
+          .value.trim();
+        const confirm = document.getElementById("signup-confirm").value.trim();
+
+        if (!name || !email || !password || !confirm) {
+          alert("Please fill in all fields!");
+          return false;
+        }
+
+        if (!email.includes("@")) {
+          alert("Please enter a valid email address!");
+          return false;
+        }
+
+        if (password !== confirm) {
+          alert("Passwords do not match!");
+          return false;
+        }
+
+        if (password.length < 6) {
+          alert("Password must be at least 6 characters long!");
+          return false;
+        }
+
+        alert("Account created successfully! Welcome to StepSphere.");
+        return true;
+      }
+    </script>
+  </body>
+</html>

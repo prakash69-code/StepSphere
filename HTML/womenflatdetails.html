@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Women's Casual Flats - StepSphere</title>
+    <link rel="stylesheet" href="/CSS/productdetail.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo">
+        <a href="/HTML/Home.html"
+          ><img src="/Image/StepSphereLogo.png" alt="StepSphere Logo"
+        /></a>
+      </div>
+
+      <div class="nav-links">
+        <a href="/HTML/Home.html">Home</a>
+        <a href="/HTML/Product.html">Product</a>
+        <a href="/HTML/Blog.html">Blog</a>
+        <a href="/HTML/Research.html">Research</a>
+        <a href="/HTML/About Us.html">About Us</a>
+      </div>
+
+      <div class="icons">
+        <i class="fas fa-search"></i>
+        <a href="/HTML/Login.html"><i class="fas fa-user-alt"></i></a>
+        <a href="/HTML/Product.html"><i class="fas fa-shopping-cart"></i></a>
+      </div>
+    </nav>
+
+    <!-- Product Detail Section -->
+    <section class="product-detail-section">
+      <div class="product-detail-container">
+        <!-- Product Image -->
+        <div class="detail-image-container">
+          <div class="detail-main-image">
+            <img
+              src="/Image/Product/Women's casual flats.jpeg"
+              alt="Women's Casual Flats"
+            />
+          </div>
+        </div>
+
+        <!-- Product Information -->
+        <div class="detail-info-container">
+          <div class="breadcrumb">
+            <a href="/HTML/Home.html">Home</a>
+            <span>/</span>
+            <a href="/HTML/Product.html">Products</a>
+            <span>/</span>
+            <span>Women's Casual Flats</span>
+          </div>
+
+          <h1 class="product-title">Women's Casual Flats</h1>
+
+          <div class="rating-section">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <span class="rating-text">(125 Reviews)</span>
+          </div>
+
+          <div class="price-section">
+            <span class="price">$2,100</span>
+            <span class="availability in-stock">
+              <i class="fas fa-check-circle"></i> In Stock
+            </span>
+          </div>
+
+          <div class="product-description">
+            <p>
+              Experience ultimate comfort with our Women's Casual Flats. These
+              beautifully designed flats feature soft memory foam insoles that
+              conform to your feet, providing all-day comfort. The durable
+              rubber outsole ensures long-lasting wear, making them perfect for
+              both casual and semi-formal occasions.
+            </p>
+            <p>
+              Crafted with breathable materials, these flats keep your feet cool
+              and fresh throughout the day. The flexible construction moves
+              naturally with your feet, while the reinforced heel area provides
+              additional support and stability.
+            </p>
+          </div>
+
+          <div class="specifications">
+            <h3>Product Specifications</h3>
+            <div class="specs-grid">
+              <div class="spec-item">
+                <label>Available Sizes:</label>
+                <p>5, 6, 7, 8, 9, 10</p>
+              </div>
+              <div class="spec-item">
+                <label>Colors:</label>
+                <p>Black, White, Red</p>
+              </div>
+              <div class="spec-item">
+                <label>Material:</label>
+                <p>Premium Leather & Rubber</p>
+              </div>
+              <div class="spec-item">
+                <label>Care Instructions:</label>
+                <p>Clean with damp cloth. Air dry only.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Size Selector -->
+          <div class="size-selector">
+            <label>Select Size:</label>
+            <div class="sizes">
+              <button class="size-btn">5</button>
+              <button class="size-btn">6</button>
+              <button class="size-btn">7</button>
+              <button class="size-btn">8</button>
+              <button class="size-btn">9</button>
+              <button class="size-btn">10</button>
+            </div>
+          </div>
+
+          <!-- Color Selector -->
+          <div class="color-selector">
+            <label>Select Color:</label>
+            <div class="colors">
+              <button
+                class="color-btn"
+                style="background-color: #000; border: 3px solid #000"
+              ></button>
+              <button
+                class="color-btn"
+                style="background-color: #fff; border: 3px solid #ccc"
+              ></button>
+              <button
+                class="color-btn"
+                style="background-color: #e74c3c; border: 3px solid #e74c3c"
+              ></button>
+            </div>
+          </div>
+
+          <!-- Action Buttons -->
+          <div class="action-buttons">
+            <button class="btn btn-primary" onclick="addToCart()">
+              <i class="fas fa-shopping-cart"></i> Add to Cart
+            </button>
+            <button class="btn btn-secondary" onclick="toggleWishlist()">
+              <i class="fas fa-heart"></i> Wishlist
+            </button>
+          </div>
+
+          <!-- Additional Info -->
+          <div class="additional-info">
+            <div class="info-item">
+              <i class="fas fa-truck"></i>
+              <div>
+                <h4>Free Shipping</h4>
+                <p>On orders over $100</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-undo"></i>
+              <div>
+                <h4>Easy Returns</h4>
+                <p>30-day return policy</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-shield-alt"></i>
+              <div>
+                <h4>Secure Payment</h4>
+                <p>100% secure checkout</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3>About StepSphere</h3>
+          <p>
+            Your ultimate destination for premium shoes and footwear. Step
+            ahead, stay ahead.
+          </p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="/HTML/Home.html">Home</a></li>
+            <li><a href="/HTML/Product.html">Products</a></li>
+            <li><a href="/HTML/Blog.html">Blog</a></li>
+            <li><a href="/HTML/Research.html">Research</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Support</h3>
+          <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Shipping Info</a></li>
+            <li><a href="#">Track Order</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Legal</h3>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Return Policy</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Contact</h3>
+          <p>Itahari, Nepal</p>
+          <p>
+            <a href="mailto:stepsphere2025@gmail.com"
+              >stepsphere2025@gmail.com</a
+            >
+          </p>
+          <p><a href="tel:+977-21-545978">+977-21-545978</a></p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          &copy; 2025 StepSphere. All rights reserved. | Step Ahead, Stay Ahead
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      function addToCart() {
+        alert("Product added to cart!");
+      }
+
+      function toggleWishlist() {
+        alert("Added to wishlist!");
+      }
+
+      document.querySelectorAll(".size-btn").forEach((btn) => {
+        btn.addEventListener("click", function () {
+          document.querySelectorAll(".size-btn").forEach((b) => b.classList.remove("active"));
+          this.classList.add("active");
+        });
+      });
+
+      document.querySelectorAll(".color-btn").forEach((btn) => {
+        btn.addEventListener("click", function () {
+          document.querySelectorAll(".color-btn").forEach((b) => b.style.borderWidth = "3px");
+          this.style.borderWidth = "4px";
+        });
+      });
+    </script>
+    <script src="/JavaScript/cart.js"></script>
+  </body>
+</html>

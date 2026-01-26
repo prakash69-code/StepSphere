@@ -1,0 +1,534 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StepSphere - Premium Shoes & Footwear</title>
+    <link rel="stylesheet" href="/CSS/Product.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo">
+        <a href="/HTML/Home.html"
+          ><img src="/Image/StepSphereLogo.png" alt="StepSphere Logo"
+        /></a>
+      </div>
+
+      <div class="nav-links">
+        <a href="/HTML/Home.html">Home</a>
+        <a href="/HTML/Product.html">Product</a>
+        <a href="/HTML/Blog.html">Blog</a>
+        <a href="/HTML/Research.html">Research</a>
+        <a href="/HTML/About Us.html">About Us</a>
+      </div>
+
+      <div class="icons">
+        <i class="fas fa-search"></i>
+        <a href="/HTML/Login.html"><i class="fas fa-user-alt"></i></a>
+        <a href="/HTML/Product.html"><i class="fas fa-shopping-cart"></i></a>
+      </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="product-header">
+      <h1>Our Premium Collection</h1>
+      <p>Discover our carefully curated selection of premium footwear</p>
+    </section>
+
+    <!-- Filter Tabs -->
+    <section class="filter-section">
+      <div class="filter-tabs">
+        <button class="filter-btn active" data-filter="all">
+          All Products
+        </button>
+        <button class="filter-btn" data-filter="women">Women</button>
+        <button class="filter-btn" data-filter="men">Men</button>
+        <button class="filter-btn" data-filter="kids">Kids</button>
+        <button class="filter-btn" data-filter="sale">On Sale</button>
+      </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="products-section">
+      <div class="products-grid">
+        <!-- Women's Shoes -->
+        <article class="product-card" data-category="women">
+          <div class="product-image">
+            <img
+              src="/Image/Product/Women's casual flats.jpeg"
+              alt="Women's Casual Flats"
+            />
+            <div class="product-badge">New</div>
+            <button class="wishlist-btn" title="Add to Wishlist">
+              <i class="fas fa-heart"></i>
+            </button>
+            <div class="product-overlay">
+              <a href="/HTML/womenflatdetails.html" class="btn btn-small"
+                >View Details</a
+              >
+            </div>
+          </div>
+          <div class="product-info">
+            <h3>Women's Casual Flats</h3>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <p class="price">$2,100</p>
+            <button class="btn btn-add-cart">Add to Cart</button>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="women">
+          <div class="product-image">
+            <img
+              src="/Image/Product/women sandles.jpeg"
+              alt="Women's Summer Sandals"
+            />
+            <div class="product-badge">Popular</div>
+            <button class="wishlist-btn" title="Add to Wishlist">
+              <i class="fas fa-heart"></i>
+            </button>
+            <div class="product-overlay">
+              <a href="#" class="btn btn-small">View Details</a>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3>Women's Summer Sandals</h3>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="price">$2,000</p>
+            <button class="btn btn-add-cart">Add to Cart</button>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="women sale">
+          <div class="product-image">
+            <img
+              src="/Image/Product/womens running shoes.jpeg"
+              alt="Women's Athletic Shoes"
+            />
+            <div class="product-badge sale">Sale</div>
+            <button class="wishlist-btn" title="Add to Wishlist">
+              <i class="fas fa-heart"></i>
+            </button>
+            <div class="product-overlay">
+              <a href="#" class="btn btn-small">View Details</a>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3>Women's Athletic Shoes</h3>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <p class="price"><del>$2,200</del> $1,700</p>
+            <button class="btn btn-add-cart">Add to Cart</button>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="women">
+          <div class="product-image">
+            <img
+              src="/Image/Product/womens slip ons.jpeg"
+              alt="Women's Slip-Ons"
+            />
+            <div class="product-badge">Trending</div>
+            <button class="wishlist-btn" title="Add to Wishlist">
+              <i class="fas fa-heart"></i>
+            </button>
+            <div class="product-overlay">
+              <a href="#" class="btn btn-small">View Details</a>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3>Women's Slip-Ons</h3>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="price">$700</p>
+            <button class="btn btn-add-cart">Add to Cart</button>
+          </div>
+        </article>
+
+        <!-- Men's Shoes -->
+        <article class="product-card" data-category="men">
+          <div class="product-image">
+            <img
+              src="/Image/Product/Men's formal shoes.jpeg"
+              alt="Men's Formal Shoes"
+            />
+            <div class="product-badge">New</div>
+            <button class="wishlist-btn" title="Add to Wishlist">
+              <i class="fas fa-heart"></i>
+            </button>
+            <div class="product-overlay">
+              <a href="/HTML/menformal.html" class="btn btn-small"
+                >View Details</a
+              >
+            </div>
+          </div>
+          <div class="product-info">
+            <h3>Men's Formal Shoes</h3>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="price">$2,000</p>
+            <button class="btn btn-add-cart">Add to Cart</button>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="men sale">
+          <div class="product-image">
+            <img src="/Image/Product/men boots.jpeg" alt="Men's Hiking Boots" />
+            <div class="product-badge sale">Sale</div>
+            <button class="wishlist-btn" title="Add to Wishlist">
+              <i class="fas fa-heart"></i>
+            </button>
+            <div class="product-overlay">
+              <a href="#" class="btn btn-small">View Details</a>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3>Men's Hiking Boots</h3>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <p class="price"><del>$3,800</del> $3,200</p>
+            <button class="btn btn-add-cart">Add to Cart</button>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="men">
+          <div class="product-image">
+            <img
+              src="/Image/Product/men loafer.jpeg"
+              alt="Men's Casual Loafers"
+            />
+            <div class="product-badge">Popular</div>
+            <button class="wishlist-btn" title="Add to Wishlist">
+              <i class="fas fa-heart"></i>
+            </button>
+            <div class="product-overlay">
+              <a href="#" class="btn btn-small">View Details</a>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3>Men's Casual Loafers</h3>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="price">$2,000</p>
+            <button class="btn btn-add-cart">Add to Cart</button>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="men">
+          <div class="product-image">
+            <img
+              src="/Image/Product/Men's formal shoes.jpeg"
+              alt="Men's Dress Shoes"
+            />
+            <div class="product-badge">Trending</div>
+            <button class="wishlist-btn" title="Add to Wishlist">
+              <i class="fas fa-heart"></i>
+            </button>
+            <div class="product-overlay">
+              <a href="#" class="btn btn-small">View Details</a>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3>Men's Dress Shoes</h3>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <p class="price">$2,500</p>
+            <button class="btn btn-add-cart">Add to Cart</button>
+          </div>
+        </article>
+
+        <!-- Kids' Shoes -->
+        <article class="product-card" data-category="kids">
+          <div class="product-image">
+            <img src="/Image/Product/kids sneaker.jpeg" alt="Kids' Sneakers" />
+            <div class="product-badge">New</div>
+            <button class="wishlist-btn" title="Add to Wishlist">
+              <i class="fas fa-heart"></i>
+            </button>
+            <div class="product-overlay">
+              <a href="#" class="btn btn-small">View Details</a>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3>Kids' Sneakers</h3>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <p class="price">$800</p>
+            <button class="btn btn-add-cart">Add to Cart</button>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="kids sale">
+          <div class="product-image">
+            <img
+              src="/Image/Product/Kid's winter shoes.jpeg"
+              alt="Kids' Winter Boots"
+            />
+            <div class="product-badge sale">Sale</div>
+            <button class="wishlist-btn" title="Add to Wishlist">
+              <i class="fas fa-heart"></i>
+            </button>
+            <div class="product-overlay">
+              <a href="#" class="btn btn-small">View Details</a>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3>Kids' Winter Boots</h3>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="price"><del>$1,500</del> $1,000</p>
+            <button class="btn btn-add-cart">Add to Cart</button>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="kids">
+          <div class="product-image">
+            <img
+              src="/Image/Product/kids sneaker.jpeg"
+              alt="Kids' Running Shoes"
+            />
+            <div class="product-badge">Popular</div>
+            <button class="wishlist-btn" title="Add to Wishlist">
+              <i class="fas fa-heart"></i>
+            </button>
+            <div class="product-overlay">
+              <a href="#" class="btn btn-small">View Details</a>
+            </div>
+          </div>
+
+          <div class="product-info">
+            <h3>Kids' Running Shoes</h3>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <p class="price">$900</p>
+            <button class="btn btn-add-cart">Add to Cart</button>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="kids">
+          <div class="product-image">
+            <img
+              src="/Image/Product/kids sneaker.jpeg"
+              alt="Kids' Casual Shoes"
+            />
+            <div class="product-badge">New</div>
+            <button class="wishlist-btn" title="Add to Wishlist">
+              <i class="fas fa-heart"></i>
+            </button>
+            <div class="product-overlay">
+              <a href="#" class="btn btn-small">View Details</a>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3>Kids' Casual Shoes</h3>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="price">$750</p>
+            <button class="btn btn-add-cart">Add to Cart</button>
+          </div>
+        </article>
+
+        <!-- On Sale Products (Additional) -->
+        <article class="product-card" data-category="men sale">
+          <div class="product-image">
+            <img
+              src="/Image/Product/men loafer.jpeg"
+              alt="Men's Premium Loafers"
+            />
+            <div class="product-badge sale">Sale</div>
+            <button class="wishlist-btn" title="Add to Wishlist">
+              <i class="fas fa-heart"></i>
+            </button>
+            <div class="product-overlay">
+              <a href="#" class="btn btn-small">View Details</a>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3>Men's Premium Loafers</h3>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <p class="price"><del>$2,500</del> $1,800</p>
+            <button class="btn btn-add-cart">Add to Cart</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3>About StepSphere</h3>
+          <p>
+            Your ultimate destination for premium shoes and footwear. Step
+            ahead, stay ahead.
+          </p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="/HTML/Home.html">Home</a></li>
+            <li><a href="/HTML/Product.html">Products</a></li>
+            <li><a href="/HTML/Blog.html">Blog</a></li>
+            <li><a href="/HTML/Research.html">Research</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Support</h3>
+          <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Shipping Info</a></li>
+            <li><a href="#">Track Order</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Legal</h3>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Return Policy</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Contact</h3>
+          <p>Itahari, Nepal</p>
+          <p>
+            <a href="mailto:stepsphere2025@gmail.com"
+              >stepsphere2025@gmail.com</a
+            >
+          </p>
+          <p><a href="tel:+977-21-545978">+977-21-545978</a></p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          &copy; 2025 StepSphere. All rights reserved. | Step Ahead, Stay Ahead
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      // Filter functionality
+      const filterBtns = document.querySelectorAll(".filter-btn");
+      const productCards = document.querySelectorAll(".product-card");
+
+      filterBtns.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          filterBtns.forEach((b) => b.classList.remove("active"));
+          btn.classList.add("active");
+
+          const filterValue = btn.getAttribute("data-filter");
+
+          productCards.forEach((card) => {
+            if (filterValue === "all") {
+              card.style.display = "block";
+            } else {
+              const categories = card.getAttribute("data-category").split(" ");
+              if (categories.includes(filterValue)) {
+                card.style.display = "block";
+              } else {
+                card.style.display = "none";
+              }
+            }
+          });
+        });
+      });
+
+      // Wishlist toggle
+      document.querySelectorAll(".wishlist-btn").forEach((btn) => {
+        btn.addEventListener("click", (e) => {
+          e.preventDefault();
+          btn.classList.toggle("active");
+        });
+      });
+    </script>
+    <script src="/JavaScript/cart.js"></script>
+  </body>
+</html>
